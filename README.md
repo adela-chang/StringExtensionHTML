@@ -7,9 +7,21 @@
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+This string extension provides two main methods, stringByDecodingHTMLEntities and stringByStrippingHTMLTags.
 
-## Requirements
+```
+import StringExtensionHTML
+
+var text = "&quot;some html string with entities&nbsp;&quot;"
+let decodedText = text.stringByDecodingHTMLEntities
+
+var text = "<span><p>Some text full of <i>unwanted</i> html tags</p></span>
+let decodedText = text.stringByStrippingHTMLTags
+```
+
+## Sample Project
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Installation
 
@@ -20,9 +32,18 @@ it, simply add the following line to your Podfile:
 pod "StringExtensionHTML"
 ```
 
+Alternatively, copy StringExtensionHTML.swift and add that single file into your Swift project. If you use this method, you can omit the line "import StringExtensionHTML" at the top of your file.
+
+## Credits
+
+Original solution and former adaptations credit to Michael Waterfall and Martin from the Stack Overflow thread [How do I decode HTML entities in swift?](http://stackoverflow.com/questions/25607247/how-do-i-decode-html-entities-in-swift). I upgraded to work with Swift 2.0 and made it available through Cocoapods. 
+
+<sub>Note: there is a Swift 2 version by Santiago in the original thread's comments. However, while that version will compile, it will not handle numeric character entities properly and also has some flaws which will cause it to crash anytime it comes to an entity it doesn't understand.</sub>
+
 ## Author
 
-Adela, a.bar.of.soap@gmail.com
+Adela Chang, a.bar.of.soap@gmail.com
+
 
 ## License
 
