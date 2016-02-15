@@ -1,0 +1,14 @@
+PODS:
+  - StringExtensionHTML (0.1.0)
+
+DEPENDENCIES:
+  - StringExtensionHTML (from `../`)
+
+EXTERNAL SOURCES:
+  StringExtensionHTML:
+    :path: ../
+
+SPEC CHECKSUMS:
+  StringExtensionHTML: 0156f380fee83f93a08a268929e9d30194cdd292
+
+COCOAPODS: 0.39.0
