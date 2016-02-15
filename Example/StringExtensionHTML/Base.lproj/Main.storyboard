@@ -1,22 +1,125 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="StringExtensionHTML_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="eFc-n0-ThO">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StringExtensionHTML" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWF-Fn-2dG">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type sample text here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lRq-S8-LLp">
+                                <rect key="frame" x="50" y="135" width="500" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Result" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oha-Z6-1dq">
+                                <rect key="frame" x="50" y="175" width="500" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSY-4f-Hfy">
+                                <rect key="frame" x="469" y="218" width="81" height="30"/>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="G7R-7r-uFH"/>
+                                </constraints>
+                                <state key="normal" title="Decode">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOC-hG-OWz">
+                                <rect key="frame" x="376" y="218" width="85" height="30"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.0" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="rew-Ip-1rU"/>
+                                </constraints>
+                                <state key="normal" title="Strip Tags">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lca-FY-eLc">
+                                <rect key="frame" x="223" y="279" width="154" height="42"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Sample 2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Irx-dH-Ief">
+                                <rect key="frame" x="396" y="279" width="154" height="42"/>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Sample 3">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8r-qo-08E">
+                                <rect key="frame" x="50" y="279" width="154" height="42"/>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="jFD-yW-qiv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Sample 1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" secondItem="TWF-Fn-2dG" secondAttribute="height" multiplier="4" id="3cn-jo-Isl"/>
+                            <constraint firstItem="TWF-Fn-2dG" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-20" id="4UP-wL-YTg"/>
+                            <constraint firstItem="YSY-4f-Hfy" firstAttribute="trailing" secondItem="oha-Z6-1dq" secondAttribute="trailing" id="6ym-lY-unM"/>
+                            <constraint firstItem="oha-Z6-1dq" firstAttribute="width" secondItem="f8r-qo-08E" secondAttribute="width" multiplier="3.25" id="7p4-r7-Gx5"/>
+                            <constraint firstItem="Irx-dH-Ief" firstAttribute="height" secondItem="f8r-qo-08E" secondAttribute="height" id="Cm7-lK-ek2"/>
+                            <constraint firstItem="lRq-S8-LLp" firstAttribute="centerX" secondItem="eFc-n0-ThO" secondAttribute="centerX" id="EJn-Ch-zMe"/>
+                            <constraint firstItem="YSY-4f-Hfy" firstAttribute="top" secondItem="oha-Z6-1dq" secondAttribute="bottom" constant="13" id="HFK-zt-g56"/>
+                            <constraint firstItem="Lca-FY-eLc" firstAttribute="centerX" secondItem="eFc-n0-ThO" secondAttribute="centerX" id="I0p-aF-0m2"/>
+                            <constraint firstItem="oha-Z6-1dq" firstAttribute="centerX" secondItem="eFc-n0-ThO" secondAttribute="centerX" id="MW0-hI-xTE"/>
+                            <constraint firstItem="Lca-FY-eLc" firstAttribute="height" secondItem="f8r-qo-08E" secondAttribute="height" id="OOy-9O-JaB"/>
+                            <constraint firstItem="Irx-dH-Ief" firstAttribute="trailing" secondItem="lRq-S8-LLp" secondAttribute="trailing" id="RXu-zP-vwJ"/>
+                            <constraint firstItem="Irx-dH-Ief" firstAttribute="top" secondItem="f8r-qo-08E" secondAttribute="top" id="S1Q-si-PJn"/>
+                            <constraint firstItem="oha-Z6-1dq" firstAttribute="width" secondItem="lRq-S8-LLp" secondAttribute="width" id="WhR-tV-uKq"/>
+                            <constraint firstItem="TWF-Fn-2dG" firstAttribute="centerX" secondItem="eFc-n0-ThO" secondAttribute="centerX" id="Xf0-UK-2p5"/>
+                            <constraint firstAttribute="centerY" secondItem="lRq-S8-LLp" secondAttribute="centerY" multiplier="2" id="Xwo-hZ-SIK"/>
+                            <constraint firstItem="TWF-Fn-2dG" firstAttribute="width" secondItem="eFc-n0-ThO" secondAttribute="width" id="cnl-wn-IFf"/>
+                            <constraint firstItem="YSY-4f-Hfy" firstAttribute="leading" secondItem="zOC-hG-OWz" secondAttribute="trailing" constant="8" id="gJX-r1-wjl"/>
+                            <constraint firstItem="zOC-hG-OWz" firstAttribute="top" secondItem="oha-Z6-1dq" secondAttribute="bottom" constant="13" id="hEC-d7-zTW"/>
+                            <constraint firstItem="oha-Z6-1dq" firstAttribute="top" secondItem="lRq-S8-LLp" secondAttribute="bottom" constant="10" id="nKq-Rk-PgA"/>
+                            <constraint firstItem="f8r-qo-08E" firstAttribute="centerY" secondItem="eFc-n0-ThO" secondAttribute="centerY" id="nsf-fO-Mom"/>
+                            <constraint firstItem="Irx-dH-Ief" firstAttribute="width" secondItem="f8r-qo-08E" secondAttribute="width" id="p61-01-OMb"/>
+                            <constraint firstItem="f8r-qo-08E" firstAttribute="leading" secondItem="oha-Z6-1dq" secondAttribute="leading" id="p91-oQ-aIj"/>
+                            <constraint firstItem="Lca-FY-eLc" firstAttribute="top" secondItem="f8r-qo-08E" secondAttribute="top" id="qum-Vk-np9"/>
+                            <constraint firstItem="Lca-FY-eLc" firstAttribute="width" secondItem="f8r-qo-08E" secondAttribute="width" id="txJ-BD-MBR"/>
+                            <constraint firstAttribute="width" secondItem="lRq-S8-LLp" secondAttribute="width" multiplier="1.2" id="vhN-w9-5s6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="convertedResult" destination="oha-Z6-1dq" id="6ee-4t-sOj"/>
+                        <outlet property="decode" destination="YSY-4f-Hfy" id="Js7-Rq-CGN"/>
+                        <outlet property="sample1" destination="f8r-qo-08E" id="MT4-E9-Vqu"/>
+                        <outlet property="sample2" destination="Lca-FY-eLc" id="3bd-4y-FZa"/>
+                        <outlet property="sample3" destination="Irx-dH-Ief" id="8kf-0m-9dt"/>
+                        <outlet property="sampleText" destination="lRq-S8-LLp" id="xcX-d4-uPH"/>
+                        <outlet property="stripTags" destination="zOC-hG-OWz" id="xeW-qI-SfB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DD1250876D79BFAF50EC241C'
+               BlueprintIdentifier = '749114885EB9DADAB701A9C4'
                BlueprintName = 'StringExtensionHTML'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'StringExtensionHTML.framework'>

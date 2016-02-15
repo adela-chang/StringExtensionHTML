@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "96C53D56787C2F48568E63B2C6E7676847B8CECF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8C4C24F447535745C2E1E94AFB86CDCABD8B2F1C" : 0,
+    "96C53D56787C2F48568E63B2C6E7676847B8CECF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E8DC6331-7144-4202-B467-45386BE4CAF2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8C4C24F447535745C2E1E94AFB86CDCABD8B2F1C" : "..",
+    "96C53D56787C2F48568E63B2C6E7676847B8CECF" : "StringExtensionHTML\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "StringExtensionHTML",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/StringExtensionHTML.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/adela-chang\/shakeconnect",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8C4C24F447535745C2E1E94AFB86CDCABD8B2F1C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/adela-chang\/StringExtensionHTML.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "96C53D56787C2F48568E63B2C6E7676847B8CECF"
+    }
+  ]
+}
