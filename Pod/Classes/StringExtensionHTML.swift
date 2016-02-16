@@ -1,7 +1,11 @@
 import Foundation
 
+/// A string extension which provides easy functionality to decode
+/// HTML entities.
 extension String {
     
+    /// Returns a new string made by removing in the `String`
+    /// anything enclosed in HTML brackets <>
     public var stringByStrippingHTMLTags: String {
         return stringByReplacingOccurrencesOfString("<[^>]+>", withString: "", options: .RegularExpressionSearch, range: nil);
     }

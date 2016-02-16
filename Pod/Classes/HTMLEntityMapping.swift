@@ -7,10 +7,10 @@
 
 import Foundation
 
-// Very slightly adapted from http://stackoverflow.com/a/30141700/106244 
-// 99.99% Credit to Martin R!
-// Mapping from XML/HTML character entity reference to character
-// From http://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references
+/** 
+    Mapping from XML/HTML character entity reference to character
+    From http://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references
+*/
 public let characterEntities : [String: Character] = [
     // XML predefined entities:
     "&quot;"     : "\"",
