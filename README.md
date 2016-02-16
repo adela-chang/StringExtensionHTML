@@ -36,7 +36,7 @@ Alternatively, copy StringExtensionHTML.swift and add that single file into your
 
 ## Credits
 
-Original solution and former adaptations credit to Michael Waterfall and Martin from the Stack Overflow thread [How do I decode HTML entities in swift?](http://stackoverflow.com/questions/25607247/how-do-i-decode-html-entities-in-swift). I upgraded to work with Swift 2.0 and made it available through Cocoapods. 
+Original solution and former adaptations credit to Michael Waterfall and Martin from the Stack Overflow thread [How do I decode HTML entities in swift?](http://stackoverflow.com/questions/25607247/how-do-i-decode-html-entities-in-swift). I upgraded to work with Swift 2.0 and made it available through CocoaPods. 
 
 <sub>Note: there is a Swift 2 version by Santiago in the original thread's comments. However, while that version will compile, it will not handle numeric character entities properly and also has some flaws which will cause it to crash anytime it comes to an entity it doesn't understand.</sub>
 
