@@ -29,7 +29,13 @@ StringExtensionHTML is available through [CocoaPods](http://cocoapods.org). To i
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "StringExtensionHTML"
+pod 'StringExtensionHTML'
+```
+
+For the Swift 2 version, add the following line:
+
+```ruby
+pod 'StringExtensionHTML', '~> 0.1'
 ```
 
 Alternatively, copy StringExtensionHTML.swift and add that single file into your Swift project. If you use this method, you can omit the line "import StringExtensionHTML" at the top of your file.
