@@ -1,6 +1,6 @@
 {
   "name": "StringExtensionHTML",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "Extends the native Swift string with a method to easily decode HTML entities.",
   "description": "Extends the Swift native string with methods to quickly and easily decode any HTML entities that might be in the string.",
   "homepage": "https://github.com/adela-chang/StringExtensionHTML",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/adela-chang/StringExtensionHTML.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "8.0"

@@ -45,11 +45,11 @@ class ViewController: UIViewController {
 
         // Do any additional setup after loading the view, typically from a nib.
         sampleText.becomeFirstResponder()
-        sample1.addTarget(self, action: "sample1Click", forControlEvents: .TouchUpInside)
-        sample2.addTarget(self, action: "sample2Click", forControlEvents: .TouchUpInside)
-        sample3.addTarget(self, action: "sample3Click", forControlEvents: .TouchUpInside)
-        stripTags.addTarget(self, action: "stripTagsClick", forControlEvents: .TouchUpInside)
-        decode.addTarget(self, action: "decodeClick", forControlEvents: .TouchUpInside)
+        sample1.addTarget(self, action: #selector(ViewController.sample1Click), for: .touchUpInside)
+        sample2.addTarget(self, action: #selector(ViewController.sample2Click), for: .touchUpInside)
+        sample3.addTarget(self, action: #selector(ViewController.sample3Click), for: .touchUpInside)
+        stripTags.addTarget(self, action: #selector(ViewController.stripTagsClick), for: .touchUpInside)
+        decode.addTarget(self, action: #selector(ViewController.decodeClick), for: .touchUpInside)
 
     }
 

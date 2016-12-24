@@ -1,5 +1,5 @@
 PODS:
-  - StringExtensionHTML (0.1.0)
+  - StringExtensionHTML (0.2.0)
 
 DEPENDENCIES:
   - StringExtensionHTML (from `../`)
@@ -9,6 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  StringExtensionHTML: 3f833ee9d1848431de873bf55b2db7dcba9be53c
+  StringExtensionHTML: f8e006d443c626300f4e1201b9d048f42700e07a
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: b5b370fd3333edb8d39bc145989dbfcf8773ae09
+
+COCOAPODS: 1.1.1
