@@ -62,12 +62,12 @@ extension String {
         var position = startIndex
         // Find the next '&' and copy the characters preceding it to `result`:
         while let ampRange = self.range(of: "&", range: position ..< endIndex) {
-            result.append(self[position ..< ampRange.lowerBound])
+            result.append(String(self[position ..< ampRange.lowerBound]))
             position = ampRange.lowerBound
             // Find the next ';' and copy everything from '&' to ';' into `entity`
             if let semiRange = self.range(of: ";", range: position ..< endIndex) {
                 let entity = self[position ..< semiRange.upperBound]
-                if let decoded = decode(entity: entity) {
+                if let decoded = decode(entity: String(entity)) {
                     // Replace by decoded character:
                     result.append(decoded)
                     // Record offset
@@ -75,7 +75,7 @@ extension String {
                     replacementOffsets.append(offset)
                 } else {
                     // Invalid entity, copy verbatim:
-                    result.append(entity)
+                    result.characters.append(contentsOf: entity)
                 }
                 position = semiRange.upperBound
             } else {
@@ -84,7 +84,7 @@ extension String {
             }
         }
         // Copy remaining characters to `result`:
-        result.append(self[position ..< endIndex])
+        result.append(String(self[position ..< endIndex]))
         // Return results
         return (decodedString: result, replacementOffsets: replacementOffsets)
     }
