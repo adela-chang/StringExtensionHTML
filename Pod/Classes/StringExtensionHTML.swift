@@ -46,12 +46,12 @@ extension String {
         //     decode("&foo;")    --> nil
         func decode(entity : String) -> Character? {
             if entity.hasPrefix("&#x") || entity.hasPrefix("&#X"){
-                print(entity.substring(with: (entity.characters.index(entity.startIndex, offsetBy: 3) ..< entity.characters.index(entity.endIndex, offsetBy: -1))))
+                print(entity[entity.index(entity.startIndex, offsetBy: 3) ..< entity.index(entity.endIndex, offsetBy: -1)])
                 
-                return decodeNumeric(string: entity.substring(with: (entity.characters.index(entity.startIndex, offsetBy: 3) ..< entity.characters.index(entity.endIndex, offsetBy: -1))), base:16)
+                return decodeNumeric(string: String(entity[entity.index(entity.startIndex, offsetBy: 3) ..< entity.index(entity.endIndex, offsetBy: -1)]), base:16)
                 
             } else if entity.hasPrefix("&#") {
-                return decodeNumeric(string: entity.substring(with: (entity.characters.index(entity.startIndex, offsetBy: 2) ..< entity.characters.index(entity.endIndex, offsetBy: -1))), base:10)
+                return decodeNumeric(string: String(entity[entity.index(entity.startIndex, offsetBy: 2) ..< entity.index(entity.endIndex, offsetBy: -1)]), base:10)
 
             } else {
                 return characterEntities[entity]
@@ -75,7 +75,7 @@ extension String {
                     replacementOffsets.append(offset)
                 } else {
                     // Invalid entity, copy verbatim:
-                    result.characters.append(contentsOf: entity)
+                    result.append(contentsOf: entity)
                 }
                 position = semiRange.upperBound
             } else {
