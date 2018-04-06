@@ -14,9 +14,17 @@ class Tests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testDecodingEntities() {
         // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        XCTAssertEqual("Foo &#xA9; bar &#x1D306; baz &#x2603; qux".stringByDecodingHTMLEntities, "Foo © bar 𝌆 baz ☃ qux")
+        XCTAssertEqual("&#x22;That&#x27;s your d&#xE6;mon, Lyra.&#x22;".stringByDecodingHTMLEntities, "\"That's your dæmon, Lyra.\"")
+        XCTAssertEqual("&lt;a href=&quot;mailto:foo@foo.com&quot;&gt;email&lt;/a&gt;".stringByDecodingHTMLEntities, "<a href=\"mailto:foo@foo.com\">email</a>")
+    }
+    
+    func testDecodingTags() {
+        // This is an example of a functional test case.
+        XCTAssertEqual("<a href=\"mailto:foo@foo.com\">email</a>".stringByStrippingHTMLTags, "email")
+        XCTAssertEqual("<h2>Try stripping <b>my</b> <a href=''><i>html</i></a> tags!</h2>".stringByStrippingHTMLTags, "Try stripping my html tags!")
     }
     
     func testPerformanceExample() {
