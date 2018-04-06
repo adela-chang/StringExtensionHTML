@@ -32,6 +32,12 @@ it, simply add the following line to your Podfile:
 pod 'StringExtensionHTML'
 ```
 
+The latest pod works with Swift 4. For the Swift 3 version, add the following line:
+
+```ruby
+pod 'StringExtensionHTML', '~> 0.2'
+```
+
 For the Swift 2 version, add the following line:
 
 ```ruby
