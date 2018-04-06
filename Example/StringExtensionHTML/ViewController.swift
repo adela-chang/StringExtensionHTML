@@ -20,23 +20,23 @@ class ViewController: UIViewController {
     @IBOutlet weak var convertedResult: UITextField!
     
     
-    func sample1Click() {
+    @objc func sample1Click() {
         sampleText.text = "&#x22;That&#x27;s your d&#xE6;mon, Lyra.&#x22;"
     }
     
-    func sample2Click() {
+    @objc func sample2Click() {
         sampleText.text = "&lt;a href=&quot;mailto:foo@foo.com&quot;&gt;email&lt;/a&gt;"
     }
     
-    func sample3Click() {
+    @objc func sample3Click() {
         sampleText.text = "<h2>Try stripping <b>my</b> <a href=''><i>html</i></a> tags!</h2>"
     }
     
-    func stripTagsClick() {
+    @objc func stripTagsClick() {
        convertedResult.text = sampleText.text!.stringByStrippingHTMLTags
     }
     
-    func decodeClick() {
+    @objc func decodeClick() {
         convertedResult.text = sampleText.text!.stringByDecodingHTMLEntities
     }
     
